@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <hader>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Contacto</li>
+                <li>Info</li>
+                <li>Doc</li>
+            </ul>
+        </nav>
+    </hader>
+    <section>
+        <div>
+            <h1>Hola mundo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo molestiae quas fuga impedit omnis ad
+                corporis nulla nesciunt vitae assumenda, adipisci, nobis suscipit quo debitis quae provident.
+                Recusandae, adipisci beatae?</p>
+            <a href="#">Esto es una ancla</a>
+        </div>
+    </section>
+    <section class="publicidad">
+        <hr>
+        <!--Dibuja una linea-->
+        <div>
+            <h2>publicidad</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex nisi eos, quis repudiandae hic minus
+                voluptate veniam consequuntur ut, deserunt error asperiores ipsam accusantium tempore <span
+                    style="color: aqua;"> esse mollitia atque quaerat possimus!</span>
+            </p>
+            <a href="https://www.google.com" target="_blank">Ir a google</a>
+            <br>
+            <img src="https://www.web-club.es/images/portada-web2017.jpg" alt="" width="400">
+        </div>
+    </section>
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--Lista ordenada-->
+    <ol>
+        <li value="30">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style: lower-alpha;">Sub elemento</li>
+                <li style="list-style: lower-alpha;">Sub elemento</li>
+                <li style="list-style: lower-alpha;"> Sub elemento</li>
+            </ol>
+        </li>
+    </ol>
+
+    <table style="width: 600px;">
+        <thead>
+            <th>Producto</th>
+            <th>Precio</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mouse</td>
+                <td>323</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>323</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 600</td>
+        </tfoot>
+    </table> 
+
+
+    <!--Formularios-->
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Alejandro">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Rivera">
+        <br>
+        <label for="comentario">Comentarios</label>
+        <br>
+        <textarea form="comentario" name="comentario" id="comentario" cols="50" rows="10"
+            placeholder="Ingrese comentario"></textarea>
+        <br>
+        <button type="button">Type Button</button>
+        <button type="reset">Type reset</button>
+        <button type="submit">Type submit</button>
+    </form>
+</body>
+
+</html>
